@@ -29,7 +29,7 @@ function Counter() {
                         </Typography>
                         <Box style={{ display: 'flex', justifyContent: 'space-around' }}>
                             <Button variant='contained' color='success' onClick={() => setCount(count + 1)}>increase 1</Button>
-                            <Button variant='contained' color='error' onClick={() => setCount(count - 1)}>decrease 2</Button>
+                            <Button variant='contained' color='error' onClick={() => setCount(count - 1)}>decrease 1</Button>
                             <Button variant='contained' color='secondary' onClick={() => setCount(count + 5)}>increase 5</Button>
                         </Box>
                     </Paper>
@@ -45,7 +45,7 @@ function Counter() {
                         </Typography>
                         <Box style={{ display: 'flex', justifyContent: 'space-around' }}>
                             <Button variant='contained' color='success' onClick={() => dispatch(incrementAction())} >increase 1</Button>
-                            <Button variant='contained' color='error' onClick={() => dispatch(decrementAction())}>decrease 2</Button>
+                            <Button variant='contained' color='error' onClick={() => dispatch(decrementAction())}>decrease 1</Button>
                             <Button variant='contained' color='secondary' onClick={() => dispatch(incrementByFiveAction(3))} >increase 5</Button>
                         </Box>
                     </Paper>
